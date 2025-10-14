@@ -1,6 +1,6 @@
 package br.com.fiap.services;
 
-import br.com.fiap.api.PlaystationGames;
+import br.com.fiap.api.Playstation.PlaystationGames;
 import com.google.gson.Gson;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;

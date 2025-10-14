@@ -1,4 +1,4 @@
-package br.com.fiap.api;
+package br.com.fiap.api.Playstation;
 
 import java.util.List;
 
@@ -9,18 +9,17 @@ public class PlaystationGames {
     private List<String> genre;
     private List<String> developers;
     private List<String> publishers;
-    private List<String> releaseDates;
+    private  PlaystationReleaseDate releaseDates;
 
     public PlaystationGames() {
     }
 
-    public PlaystationGames(String id, String name, List<String> genre, List<String> developers, List<String> publishers, List<String> releaseDates) {
+    public PlaystationGames(String id, String name, List<String> genre, List<String> developers, List<String> publishers) {
         this.id = id;
         this.name = name;
         this.genre = genre;
         this.developers = developers;
         this.publishers = publishers;
-        this.releaseDates = releaseDates;
     }
 
     public String getId() {
@@ -63,12 +62,12 @@ public class PlaystationGames {
         this.publishers = publishers;
     }
 
-    public List<String> getReleaseDates() {
+    public PlaystationReleaseDate getReleaseDate() {
         return releaseDates;
     }
 
-    public void setReleaseDates(List<String> releaseDates) {
-        this.releaseDates = releaseDates;
+    public void setReleaseDate(PlaystationReleaseDate releaseDate) {
+        this.releaseDates = releaseDate;
     }
 
     @Override
@@ -78,6 +77,6 @@ public class PlaystationGames {
                 "\nGênero: " + genre +
                 "\nTime de desevolvedores: " + developers +
                 "\nEmpresa que publicou: " + publishers +
-                "\nData de lançamento: " + releaseDates;
+                releaseDates;
     }
 }
