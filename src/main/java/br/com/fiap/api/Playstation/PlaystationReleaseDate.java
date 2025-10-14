@@ -51,7 +51,7 @@ public class PlaystationReleaseDate {
 
     @Override
         public String toString() {
-            return "\nDatas de Lançamento:" +
+            return "\n\nDatas de Lançamento:" +
                     "\nJapão: " + Japan +
                     "\nAmérica do Norte: " + NorthAmerica +
                     "\nEuropa: " + Europe +
