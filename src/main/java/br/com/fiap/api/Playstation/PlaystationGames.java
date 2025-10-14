@@ -72,7 +72,7 @@ public class PlaystationGames {
 
     @Override
     public String toString() {
-        return "Detalhes do Jogo" +
+        return "\n\nDetalhes do Jogo (Playstation)" +
                 "\nNome do jogo: " + name +
                 "\nGênero: " + genre +
                 "\nTime de desevolvedores: " + developers +

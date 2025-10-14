@@ -12,7 +12,7 @@ public class MetodoPlaystation {
         return JOptionPane.showInputDialog(j);
     }
 
-    public void escolherJogoPlaystation() throws IOException {
+    public static void escolherJogoPlaystation() throws IOException {
 
         PlaystatioGamesService playstatioGamesService = new PlaystatioGamesService();
 
