@@ -16,18 +16,21 @@ public class XboxGamesService {
         public XboxGames getGame(String g) throws IOException {
 
             XboxGames xboxGames = null;
-
+            //Request
             HttpGet request = new HttpGet("https://api.sampleapis.com/xbox/games/" + g);
-
+            //Client
             CloseableHttpClient httpClient = HttpClientBuilder.create().disableRedirectHandling().build();
-
+            //Response
             CloseableHttpResponse response = httpClient.execute(request);
-
+            //Entity
             HttpEntity entity = response.getEntity();
 
             if (entity != null) {
+
                 String result = EntityUtils.toString(entity);
+
                 Gson gson = new Gson();
+
                 xboxGames = gson.fromJson(result, XboxGames.class);
             }
             return xboxGames;
