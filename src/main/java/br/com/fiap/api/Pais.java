@@ -34,7 +34,7 @@ public class Pais {
 
     @Override
     public String toString() {
-        return "----- País -----" +
+        return "\n\n----- País -----" +
                 "\nNome: " + nome +
                 "\nCapital: " + capital +
                 "\nPopulação: " + populacao +

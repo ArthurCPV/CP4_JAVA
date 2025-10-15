@@ -19,6 +19,7 @@ public class MetodoCountries {
 
         // Pede o nome do país
         System.out.println("Digite o nome do país: ");
+        System.out.print("\nEscolha: ");
         String nome = scanner.nextLine();
 
         // Faz a busca
