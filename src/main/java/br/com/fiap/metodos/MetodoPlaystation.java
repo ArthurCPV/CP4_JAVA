@@ -5,21 +5,23 @@ import br.com.fiap.services.PlaystatioGamesService;
 
 import javax.swing.*;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class MetodoPlaystation {
 
-    static String texto (String j) {
-        return JOptionPane.showInputDialog(j);
-    }
 
-    public static void escolherJogoPlaystation() throws IOException {
+    public static void escolherJogoPlaystation(Scanner scanner) throws IOException {
 
         PlaystatioGamesService playstatioGamesService = new PlaystatioGamesService();
 
-        String g = texto("Digite o Id do jogo(1-1150)");
+        System.out.println("\nDigite o Id do jogo(1-1150)");
+        System.out.print("\nEscolha: ");
+        String g = scanner.nextLine();
 
         PlaystationGames objPlaystationGames = playstatioGamesService.getGame(g);
 
         System.out.println(objPlaystationGames);
+
+
     }
 }

@@ -5,6 +5,7 @@ import br.com.fiap.services.XboxGamesService;
 
 import javax.swing.*;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class MetodoXbox {
 
@@ -12,11 +13,12 @@ public class MetodoXbox {
         return JOptionPane.showInputDialog(j);
     }
 
-    public static void escolherJogoXbox() throws IOException {
+    public static void escolherJogoXbox(Scanner scanner) throws IOException {
 
         XboxGamesService xboxGamesService = new XboxGamesService();
 
-        String g = texto("Digite o Id do jogo (1–1150)");
+        System.out.println("Digite o Id do jogo (1–2279)");
+        String g = scanner.nextLine();
 
         XboxGames objXboxGames = xboxGamesService.getGame(g);
 
