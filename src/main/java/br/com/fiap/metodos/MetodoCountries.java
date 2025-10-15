@@ -18,7 +18,7 @@ public class MetodoCountries {
         RestCountriesService service = new RestCountriesService();
 
         // Pede o nome do país
-        System.out.println("Digite o nome do país: ");
+        System.out.println("\nDigite o nome do país: ");
         System.out.print("\nEscolha: ");
         String nome = scanner.nextLine();
 

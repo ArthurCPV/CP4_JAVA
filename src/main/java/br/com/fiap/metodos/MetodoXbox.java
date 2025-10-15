@@ -17,7 +17,7 @@ public class MetodoXbox {
 
         XboxGamesService xboxGamesService = new XboxGamesService();
 
-        System.out.println("Digite o Id do jogo (1–2279)");
+        System.out.println("\nDigite o Id do jogo (1–2279)");
         System.out.print("\nEscolha: ");
         String g = scanner.nextLine();
 

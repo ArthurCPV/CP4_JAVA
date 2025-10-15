@@ -29,7 +29,7 @@ public class TesteSistema {
                 case 3 -> MetodoNintendoSwitch.escolherJogoNintendo(scanner);
                 case 4 -> MetodoCountries.escolherPais(scanner);
                 case 5 -> System.out.println("\nArthur dos Santos Cabral | RM:566515\nVitor Fria Dalmagro | RM:566052");
-                case 6 -> saidaSistema = true;
+                case 7 -> saidaSistema = true;
                 default -> System.out.println("Opção inválida!");
             }
 
