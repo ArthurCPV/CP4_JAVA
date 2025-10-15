@@ -18,7 +18,7 @@ public class TesteSistema {
             boolean saidaSistema = false;
         do {
 
-            System.out.println("\n\n*** Menu Princpal *** \n1 - API => Jogos de Playstation 4\n2 - API => Jogos de XBOX \n3 - API => Jogos de Nintendo Switch\n4 - API => RestCountries\n5 - Integrantes\n6 - Sair do Sistema");
+            System.out.println("\n\n*** Menu Princpal *** \n1 - API => Jogos de Playstation 4\n2 - API => Jogos de XBOX \n3 - API => Jogos de Nintendo Switch\n4 - API => RestCountries\n5 - Integrantes\n6 - Sobre o Projeto\n7 - Sair do Sistema");
             System.out.print("Escolha: ");
             int escolhaMenuPrincipal = scanner.nextInt();
             scanner.nextLine();
@@ -29,6 +29,7 @@ public class TesteSistema {
                 case 3 -> MetodoNintendoSwitch.escolherJogoNintendo(scanner);
                 case 4 -> MetodoCountries.escolherPais(scanner);
                 case 5 -> System.out.println("\nArthur dos Santos Cabral | RM:566515\nVitor Fria Dalmagro | RM:566052");
+                case 6 -> System.out.println("\nhttps://youtu.be/jPkzK6I9E_Q");
                 case 7 -> saidaSistema = true;
                 default -> System.out.println("Opção inválida!");
             }
